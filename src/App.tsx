@@ -1,8 +1,11 @@
+import { Canvas } from "@react-three/fiber";
+
 function App() {
   return (
-    <div>
-      <h1>Black Hole</h1>
-      <p>This project aims to create a black hole using Three.js</p>
+    <div id="canvas-container">
+      <Canvas>
+        <color attach="background" args={["black"]} />
+      </Canvas>
     </div>
   );
 }
